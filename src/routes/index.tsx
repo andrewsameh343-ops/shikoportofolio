@@ -9,9 +9,9 @@ import { Work } from "@/components/portfolio/Work";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lina Moreau — Graphic Designer" },
-      { name: "description", content: "Portfolio of Lina Moreau, a graphic designer crafting branding, packaging, social media and illustration." },
-      { property: "og:title", content: "Lina Moreau — Graphic Designer" },
+      { title: "Sherif Makram — Graphic Designer" },
+      { name: "description", content: "Portfolio of Sherif Makram, a graphic designer crafting branding, packaging, social media and illustration." },
+      { property: "og:title", content: "Sherif Makram — Graphic Designer" },
       { property: "og:description", content: "Branding, packaging, social media and illustration with quiet luxury." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -29,8 +29,8 @@ const SERVICES = [
 ];
 const CONTACTS = [
   ["WhatsApp", "https://wa.me/201000000000", "+20 100 000 0000"],
-  ["Email", "mailto:hello@linamoreau.com", "hello@linamoreau.com"],
-  ["Instagram", "https://instagram.com/linamoreau", "@linamoreau"],
+  ["Email", "mailto:hello@sherifmakram.com", "hello@sherifmakram.com"],
+  ["Instagram", "https://instagram.com/sherifmakram", "@sherifmakram"],
 ];
 
 function Hero() {
@@ -46,7 +46,7 @@ function Hero() {
       <motion.div style={{ y: ty, opacity: op }} className="relative">
         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3, duration: 1 }} className="eyebrow">Graphic Designer — Cairo</motion.p>
         <h1 className="mt-6 font-display text-[18vw] leading-[0.85] md:text-[12vw]">
-          {["Lina", "Moreau"].map((w, i) => (
+          {["Sherif", "Makram"].map((w, i) => (
             <span key={w} className="block overflow-hidden">
               <motion.span className={`block ${i ? "italic text-primary" : ""}`} initial={{ y: "110%" }} animate={{ y: 0 }} transition={{ duration: 1.2, delay: 0.2 + i * 0.15, ease: [0.22, 1, 0.36, 1] }}>{w}</motion.span>
             </span>
@@ -77,7 +77,7 @@ function Index() {
     <main className="overflow-x-clip">
       <Cursor />
       <header className="fixed inset-x-0 top-0 z-40 flex items-center justify-between px-6 py-6 mix-blend-difference md:px-12">
-        <a href="#" className="font-display text-2xl">L<span className="text-primary">.</span>M</a>
+        <a href="#" className="font-display text-2xl">S<span className="text-primary">.</span>M</a>
         <nav className="hidden gap-8 md:flex">
           {NAV.map((n) => <Magnetic key={n}><a href={`#${n.toLowerCase()}`} className="link-line text-xs uppercase tracking-[0.2em]">{n}</a></Magnetic>)}
         </nav>
@@ -89,11 +89,11 @@ function Index() {
       <Work />
 
       <section id="about" className="grid gap-16 px-6 py-32 md:grid-cols-2 md:px-12 md:py-44">
-        <Reveal><div className="aspect-[4/5] overflow-hidden"><img src={portrait} alt="Lina Moreau portrait" loading="lazy" width={1024} height={1280} className="h-full w-full object-cover transition-transform duration-[1.2s] hover:scale-105" /></div></Reveal>
+        <Reveal><div className="aspect-[4/5] overflow-hidden"><img src={portrait} alt="Sherif Makram portrait" loading="lazy" width={1024} height={1280} className="h-full w-full object-cover transition-transform duration-[1.2s] hover:scale-105" /></div></Reveal>
         <div className="flex flex-col justify-center">
           <Reveal><p className="eyebrow">02 — About</p></Reveal>
           <Reveal delay={0.1}><h2 className="mt-4 font-display text-5xl leading-tight md:text-6xl">Design is the art of <em className="text-primary">leaving things out.</em></h2></Reveal>
-          <Reveal delay={0.2}><p className="mt-8 max-w-lg text-lg leading-relaxed text-muted-foreground">I'm Lina, an independent designer helping hospitality, beauty and lifestyle brands find a visual language that feels inevitable. Ten years, four continents, one obsession: details.</p></Reveal>
+          <Reveal delay={0.2}><p className="mt-8 max-w-lg text-lg leading-relaxed text-muted-foreground">I'm Sherif, an independent designer helping hospitality, beauty and lifestyle brands find a visual language that feels inevitable. Ten years, four continents, one obsession: details.</p></Reveal>
           <Reveal delay={0.3} className="mt-12 grid grid-cols-3 gap-6 border-t border-border pt-8">
             {[["10+", "Years"], ["120", "Projects"], ["14", "Awards"]].map(([n, l]) => (
               <div key={l}><p className="font-display text-4xl text-primary md:text-5xl">{n}</p><p className="mt-1 text-xs uppercase tracking-[0.2em] text-muted-foreground">{l}</p></div>
@@ -130,7 +130,7 @@ function Index() {
       </section>
 
       <footer className="flex flex-col justify-between gap-4 border-t border-border px-6 py-8 text-xs uppercase tracking-[0.2em] text-muted-foreground md:flex-row md:px-12">
-        <span>© 2026 Lina Moreau</span><span>Designed with restraint</span>
+        <span>© 2026 Sherif Makram</span><span>Designed with restraint</span>
       </footer>
     </main>
   );
